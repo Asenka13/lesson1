@@ -1,0 +1,40 @@
+C:\Users\Анастасия>cd c:\
+
+c:\>dir
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: B438-68F9
+
+ Содержимое папки c:\
+
+19.04.2014  11:46             6 083 0101.txt
+15.02.2016  14:41    <DIR>          9a08a5ff852188278a111c
+28.10.2014  08:05    <DIR>          AMD
+07.03.2014  21:02    <DIR>          Games
+09.02.2014  22:16    <DIR>          ICQ
+22.08.2013  20:22    <DIR>          PerfLogs
+15.02.2018  22:39    <DIR>          Program Files
+15.02.2018  23:52    <DIR>          Program Files (x86)
+17.02.2018  12:10    <DIR>          Python34
+17.02.2018  11:41    <DIR>          Python35
+30.10.2013  14:51             2 243 RHDSetup.log
+30.10.2013  13:20    <DIR>          sources
+13.01.2015  08:01    <DIR>          supermegabest
+16.04.2014  19:32    <DIR>          Update
+03.12.2017  21:05    <DIR>          Users
+17.02.2018  12:05    <DIR>          WebServers
+17.02.2018  12:07    <DIR>          Windows
+               2 файлов          8 326 байт
+              15 папок  469 125 255 168 байт свободно
+
+c:\>mkdir projects
+
+c:\>cd c:\projects
+
+c:\projects>mkdir lesson1
+
+c:\projects>cd c:\progects\lesson1
+Системе не удается найти указанный путь.
+
+c:\projects>cd c:\projects\lesson1
+
+c:\projects\lesson1>
