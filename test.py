@@ -3,15 +3,8 @@ mydictionary = {
 	"Ваня": {"city" : "Chelyabinsk", "temperature" : 13, "wind" : 3 },
 	"Маша": {"city" : "Tomsk", "temperature" : 10, "wind" : 5 }
 	}
-name = str (input ("Введите имя: "))
+name = (input ("Введите имя: "))
+print(mydictionary.get(name))
 
-if name == 'Петя':
-	print(mydictionary.get("Петя"))
-elif name == 'Ваня':
-	print(mydictionary.get("Ваня"))
-elif name == 'Маша':
-	print(mydictionary.get("Маша"))
+#Если ввести несушествующее имя, то у меня ничего не было, просто пусто
 
-	#Если ввести несушествующее имя, то у меня ничего не было, просто пусто
-
-# Я не поняла, как использовать такую штуку с условиями:	for key, value in mydictionary.items():......
