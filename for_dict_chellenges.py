@@ -45,3 +45,35 @@ for key in count_names:
         counter = r
         most_common_name = key
 print('Самое частое имя среди учеников:', most_common_name)
+
+# Задание 3
+# Есть список учеников в нескольких классах, нужно вывести самое частое имя в каждом классе.
+school_students = [
+  [  # это – первый класс
+    {'first_name': 'Вася'},
+    {'first_name': 'Вася'},
+  ],
+  [  # это – второй класс
+    {'first_name': 'Маша'},
+    {'first_name': 'Маша'},
+    {'first_name': 'Оля'},
+  ]
+]
+# ???
+
+# Пример вывода:
+# Самое частое имя в классе 1: Вася
+# Самое частое имя в классе 2: Маша
+
+
+for number, student_classes in enumerate(school_students, 1):
+	count_names = {}
+	for names in student_classes:
+		count_names[names.get('first_name')] = student_classes.count(names)
+		counter = 1
+		for key in count_names:
+			r = count_names[key]
+			if r > counter:
+				counter = r
+				most_common_name = key
+	print('Самое частое имя в классе', number,':', most_common_name)
