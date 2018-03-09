@@ -134,4 +134,33 @@ is_male = {
 # Больше всего мальчиков в классе 3c
 # Больше всего девочек в классе 2a
 
+Girls = {}
+Boys = {}
+for classes in school:
+    number_class = classes.get('class')
+    students = classes.get('students')
+    a = 1
+    b = 1
+    for names in students:
+        name = names.get('first_name')
+        if name in is_male and is_male[name] == False:
+            Girls[number_class] = a
+            a = a + 1
+        else:
+            Girls[number_class] = 0
+        if name in is_male and is_male[name] == True:
+            Boys[number_class] = b
+            b = b + 1
+        else:
+            Boys[number_class] = 0
 
+number_girls = list(Girls.values())
+name_girls = list(Girls.keys())
+most_girls = name_girls[number_girls.index(max(number_girls))]
+
+number_boys = list(Boys.values())
+name_boys = list(Boys.keys())
+most_boys = name_boys[number_boys.index(max(number_boys))]
+
+print('Больше всего мальчиков в классе', most_boys)
+print('Больше всего девочек в классе', most_girls)
